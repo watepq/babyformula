@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """构建配方奶粉 SQLite 库存。
 数据源（可重复运行、增量刷新）：
-  _verify/list_all.json          全量2490条列表（基本信息）
-  _verify/details_all.jsonl      已抓取的详情（含营养成分 elments）
-  _verify/official_by_reg.json   表格27行详情
-  _verify/recommend_details.json 推荐候选详情
-输出：_db/formula.db
+  data/raw/list_all.json          全量2490条列表（基本信息）
+  data/raw/details_all.jsonl      已抓取的详情（含营养成分 elments）
+  data/raw/official_by_reg.json   表格27行详情
+  data/raw/recommend_details.json 推荐候选详情
+输出：data/formula.db
 """
 import html
 import json
@@ -202,7 +202,7 @@ LIMITS = [
 def _gb(stage, rows):
     std = {1: "GB 10765-2021", 2: "GB 10766-2021", 3: "GB 10767-2021"}[stage]
     return [(n, std + " 法定", lo, hi, u,
-             "GB原标准表(每100kJ) 留档 _refs/" + std + ".pdf", stage, "domestic")
+             "GB原标准表(每100kJ) 留档 docs/references/" + std + ".pdf", stage, "domestic")
             for n, lo, hi, u in rows]
 
 
