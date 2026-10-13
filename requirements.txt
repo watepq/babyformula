@@ -1,0 +1,4 @@
+# 核心（server / build_db / gen_standalone / fetch_* / diff_report / analyze_stage1）：仅用 Python 标准库，无需安装任何包
+#
+# 仅 scripts/update_excel.py（Excel 核实回写，一次性工具）需要：
+openpyxl>=3.1

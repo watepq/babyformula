@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 运行产物
+*.log
+data/server.log
+
+# 编辑器等
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>婴幼儿配方奶粉 1–3段 · 注册配方对比</title>
+<style>
+:root{--bg:#0f1420;--panel:#171e2e;--panel2:#1e2740;--line:#2a3450;--txt:#e6ebf5;--dim:#8a97b3;--acc:#4d8dff;--good:#37c96f;--warn:#ffb020;--bad:#ff5c6c;--chip:#26314e}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt)}
+a{color:var(--acc)}
+header{padding:14px 20px;background:linear-gradient(90deg,#16203a,#101828);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header h1{margin:0;font-size:18px}
+header .stats{margin-top:6px;color:var(--dim);font-size:12px}
+header .stats b{color:var(--txt)}
+.wrap{padding:16px 20px;max-width:1600px;margin:0 auto}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:14px}
+.filters label{color:var(--dim);font-size:12px;margin-right:2px}
+.filters input,.filters select{background:var(--panel2);border:1px solid var(--line);color:var(--txt);padding:6px 9px;border-radius:7px;font-size:13px}
+.filters input[type=text]{width:220px}
+.chk{display:inline-flex;align-items:center;gap:4px;background:var(--chip);padding:5px 9px;border-radius:20px;cursor:pointer;user-select:none;font-size:12px}
+.tierLab{font-size:11px;font-weight:700;letter-spacing:2px;padding:4px 7px;border-radius:6px;background:#141b2b;border:1px solid var(--line);margin-left:6px}
+.btn{background:var(--acc);border:none;color:#fff;padding:7px 14px;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600}
+.btn.ghost{background:var(--panel2);border:1px solid var(--line);color:var(--txt);font-weight:400}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.tabs{display:flex;gap:4px;margin-bottom:12px}
+.tabs button{background:var(--panel);border:1px solid var(--line);color:var(--dim);padding:8px 16px;border-radius:8px 8px 0 0;cursor:pointer;font-size:13px}
+.tabs button.on{background:var(--panel2);color:var(--txt);border-bottom-color:var(--panel2);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:middle}
+th{background:var(--panel2);position:sticky;top:0;z-index:5;white-space:nowrap}
+tbody tr:nth-child(even){background:#141b2b}
+.rowlist td{white-space:nowrap}
+.tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;margin:1px}
+.t-go{background:#123a24;color:#5be08a}.t-cow{background:#1a2b4a;color:#7fb0ff}
+.t-tab{background:#3a2d10;color:#ffcf6b}.t-rec{background:#2d1440;color:#c88bff}
+.t-main{background:#12314f;color:#6fc0ff}.t-exp{background:#4a1a20;color:#ff8a97}
+.t-in{background:#0f3a3a;color:#5fd6d6}
+.t-flag{background:#243046;color:#a9bde0}.t-flagHL{background:#1c4a2e;color:#8ff0b0}
+.sr{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line)}
+.sk{color:var(--dim);font-size:12px}.sv{font-size:13px}
+.st-有效{color:var(--good)}.st-注销,.st-撤销,.st-无效{color:var(--bad)}
+.right{text-align:right}
+.muted{color:var(--dim)}
+.pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:14px 0}
+.pager .btn{padding:5px 11px}
+.scroll{overflow:auto;border:1px solid var(--line);border-radius:10px;max-height:72vh}
+.cmp th.name{min-width:150px;position:sticky;left:0;z-index:6;background:var(--panel2)}
+.cmp td.cell{min-width:150px}
+.cmp td.diff{background:#3a1e28}
+.cmp td.miss{color:#4a5470}
+.cmp .grp td{background:#20304f;color:#9fc0ff;font-weight:600}
+.cmp .hd{font-size:12px;line-height:1.35}
+.cmp .hd .sub{color:var(--dim);font-size:11px;font-weight:400}
+.cmp .hd .rm{float:right;cursor:pointer;color:var(--bad);opacity:.7}
+.detail{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.detail h2{margin:0 0 4px}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px 20px;margin:12px 0}
+.kv div span{color:var(--dim);display:block;font-size:11px}
+.nav{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.pill{background:var(--chip);padding:2px 8px;border-radius:12px;font-size:12px}
+.hl{color:var(--good)}
+.small{font-size:12px;color:var(--dim)}
+.legend{margin:8px 0;font-size:12px;color:var(--dim)}
+.legend .diff{background:#3a1e28;padding:1px 6px;border-radius:4px;color:#ff9aa8}
+</style>
+</head>
+<body>
+<header>
+  <h1>婴幼儿配方奶粉（1–3段）注册配方对比 <span class="small">数据来源：国家市场监督管理总局 特殊食品信息查询平台</span></h1>
+  <div class="stats" id="stats">加载中…</div>
+</header>
+<div class="wrap">
+  <div class="filters">
+    <label>段数</label>
+    <select id="fStage"><option value="1">1段</option><option value="2">2段</option><option value="3">3段</option><option value="">全部</option></select>
+    <label>状态</label>
+    <select id="fStatus"><option value="有效">有效</option><option value="">全部</option><option value="注销">注销</option><option value="撤销">撤销</option><option value="无效">无效</option></select>
+    <label>奶基</label>
+    <select id="fMilk"><option value="">全部</option><option value="cow">牛奶基</option><option value="goat">羊奶基</option></select>
+    <input type="text" id="fQ" placeholder="搜索 品牌/产品/企业/注册号…">
+    <label class="chk"><input type="checkbox" id="fTab"> 仅表格已收录</label>
+    <label class="chk"><input type="checkbox" id="fNotTab"> 仅表格未收录</label>
+    <label class="chk"><input type="checkbox" id="fMain"> 仅主流品牌</label>
+    <label class="chk"><input type="checkbox" id="fValid" checked> 排除已过期</label>
+    <label class="chk"><input type="checkbox" id="fFet" checked> 仅含成分数据</label>
+    <button class="btn" id="doSearch">查询</button>
+    <button class="btn ghost" id="doReset">重置</button>
+    <span style="flex:1"></span>
+    <span class="pill">已选 <b id="selCount">0</b></span>
+    <button class="btn ghost" id="selPage" title="勾选当前页全部行">全选本页</button>
+    <button class="btn ghost" id="selAll" title="按当前筛选条件勾选全部结果（最多 12 款）">全选结果</button>
+    <button class="btn ghost" id="selClear">清空勾选</button>
+    <button class="btn ghost" id="cmpSel">并排对比选中</button>
+  </div>
+  <div class="filters" id="flagBar" style="gap:6px">
+    <label>成分亮点</label>
+  </div>
+
+  <div class="tabs">
+    <button data-v="list" class="on">清单浏览</button>
+    <button data-v="walk">逐个遍历</button>
+    <button data-v="cmp">并排对比</button>
+    <button data-v="rec">推荐发现</button>
+    <button data-v="src">数据来源说明</button>
+  </div>
+
+  <div id="v-list"></div>
+  <div id="v-walk" style="display:none"></div>
+  <div id="v-cmp" style="display:none"></div>
+  <div id="v-rec" style="display:none"></div>
+  <div id="v-src" style="display:none"></div>
+</div>
+
+<script>
+const api=(p,q)=>fetch('/api/'+p+'?'+new URLSearchParams(q)).then(r=>r.json());
+const FLAGS=["乳铁蛋白","OPO","HMO","益生元GOS","益生元FOS","益生菌","DHA","ARA","叶黄素","MFGM乳脂球膜","核苷酸","骨桥蛋白","神经节苷脂","α-乳白蛋白","磷脂","CPP","乳清蛋白","牛磺酸","胆碱","肌醇","左旋肉碱"];
+let FDEF={};// name -> {category,evidence,effect}
+const CAT_COLOR={肠道:"#1c4a2e|#8ff0b0",免疫:"#3a2350|#c9a0ff",视认:"#14384f|#7fd0ff",基础:"#2b3040|#aab6d0"};
+const TIERS=["必须","强","中","弱"];
+const TIER_COLOR={"必须":"#9db8e8","强":"#5be08a","中":"#ffcf6b","弱":"#a0a8c0"};
+let state={view:'list',page:1,size:50,total:0,rows:[],sel:new Set(),walkList:[],walkIdx:0,flags:new Set()};
+const $=s=>document.querySelector(s);
+const esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function flagChip(f,hit){const d=FDEF[f]||{};const [bg,fg]=(CAT_COLOR[d.category]||CAT_COLOR['基础']).split('|');
+  const c=hit?CAT_COLOR['免疫'].split('|'):[bg,fg];const tc=TIER_COLOR[d.tier]||'#a0a8c0';
+  return `<span class="tag" style="background:${hit?c[0]:bg};color:${hit?c[1]:fg}" title="${esc(d.category||'')}赛道 · 层级:${esc(d.tier||'')} · 证据:${esc(d.evidence||'')} · ${esc(d.effect||'')}">${esc(f)}${d.tier?'<sup style="color:'+tc+'">'+esc(d.tier)+'</sup>':''}</span>`;}
+
+async function loadStats(){const s=await api('stats');
+  $('#stats').innerHTML=`共 <b>${s.total}</b> 条注册配方 · 已抓取成分 <b>${s.fetched}</b> 条 · 营养成分 <b>${s.nutrients}</b> 行 · `
+   +`1段有效 <b>${s.stage1_valid}</b> · 表格收录 <b>${s.in_table}</b> · 主流品牌 <b>${s.mainstream}</b> · `
+   +`推荐池 <b>${s.rec_pool}</b> · 已过期 <b>${s.expired}</b>`;}
+
+function filters(){return{stage:$('#fStage').value,status:$('#fStatus').value,q:$('#fQ').value,
+  goat:$('#fMilk').value==='goat'?'1':'',cow:$('#fMilk').value==='cow'?'1':'',
+  in_table:$('#fTab').checked?'1':'',not_in_table:$('#fNotTab').checked?'1':'',
+  mainstream:$('#fMain').checked?'1':'',valid:$('#fValid').checked?'1':'',
+  recommended:$('#fRec')&&$('#fRec').checked?'1':'',fetched:$('#fFet').checked?'1':'',
+  flag:[...state.flags].join(','),page:state.page,size:state.size};}
+
+async function search(){const d=await api('products',filters());state.rows=d.rows;state.total=d.total;
+  if(state.view==='list')renderList();else{state.walkList=d.rows;state.walkIdx=0;renderWalk();}}
+
+function flagsHtml(r){if(!r.flags)return '';return r.flags.split(',').filter(Boolean).map(f=>flagChip(f,state.flags.has(f))).join('');}
+function tags(r){let h='';h+=r.is_goat?'<span class="tag t-go">羊</span>':'<span class="tag t-cow">牛</span>';
+  if(r.in_table)h+='<span class="tag t-tab">表格</span>';if(r.is_recommended)h+='<span class="tag t-rec">推荐</span>';
+  if(r.is_mainstream)h+='<span class="tag t-main">主流</span>';if(r.is_expired)h+='<span class="tag t-exp">已过期</span>';
+  if(r.detail_fetched)h+='<span class="tag t-in">含成分'+r.n_nutrients+'</span>';else h+='<span class="tag" style="background:#2a2233;color:#7a6a92">仅基本信息</span>';return h;}
+
+function renderList(){
+  let h=`<div class="legend">勾选左列或用顶部「全选本页/全选结果」批量加入，再点「并排对比选中」即可直接对比（不必逐个进详情，最多 ${12} 款）。共 ${state.total} 条。</div>`;
+  h+='<div class="scroll"><table class="rowlist"><thead><tr><th></th><th>品牌</th><th>产品名称</th><th>注册号</th><th>原产国</th><th>工艺</th><th>状态</th><th>有效期至</th><th>成分亮点</th><th>标记</th><th></th></tr></thead><tbody>';
+  for(const r of state.rows){const ck=state.sel.has(r.reg)?'checked':'';
+    h+=`<tr><td><input type="checkbox" class="selck" data-reg="${esc(r.reg)}" ${ck}></td>`
+     +`<td>${esc(r.brand)}</td><td>${esc(r.product_name)}</td><td class="muted">${esc(r.reg)}</td>`
+     +`<td>${esc(r.country)}</td><td>${esc(r.process)}</td>`
+     +`<td class="st-${esc(r.status)}">${esc(r.status)}</td><td>${esc(r.valid_until)}</td><td>${flagsHtml(r)||'<span class=muted>—</span>'}</td><td>${tags(r)}</td>`
+     +`<td><button class="btn ghost view" data-reg="${esc(r.reg)}">详情</button></td></tr>`;}
+  h+='</tbody></table></div>'+pager();
+  $('#v-list').innerHTML=h;bindList();}
+
+function pager(){const p=state.page,n=Math.max(1,Math.ceil(state.total/state.size));
+  return `<div class="pager"><button class="btn ghost" id="prev" ${p<=1?'disabled':''}>‹ 上一页</button>`
+    +`<span>第 ${p} / ${n} 页</span><button class="btn ghost" id="next" ${p>=n?'disabled':''}>下一页 ›</button>`
+    +`<select id="psize">${[20,50,100,200].map(x=>`<option ${x===state.size?'selected':''}>${x}</option>`).join('')}</select> 条/页</div>`;}
+
+function bindList(){
+  document.querySelectorAll('#v-list .selck').forEach(c=>c.onchange=e=>{const r=e.target.dataset.reg;e.target.checked?state.sel.add(r):state.sel.delete(r);updSel();});
+  const sync=()=>{document.querySelectorAll('#v-list .selck').forEach(c=>c.checked=state.sel.has(c.dataset.reg));updSel();};
+  const pb=$('#selPage'),ab=$('#selAll'),cb=$('#selClear');
+  if(pb)pb.onclick=()=>{state.rows.slice(0,12).forEach(r=>state.sel.add(r.reg));sync();};
+  if(cb)cb.onclick=()=>{state.sel.clear();sync();};
+  if(ab)ab.onclick=async()=>{const q=filters();q.page=1;q.size=12;const d=await api('products',q);d.rows.forEach(r=>state.sel.add(r.reg));sync();};
+  document.querySelectorAll('#v-list .view').forEach(b=>b.onclick=e=>{const r=e.target.dataset.reg;state.walkList=state.rows;state.walkIdx=state.walkList.findIndex(x=>x.reg===r);setView('walk');renderWalk();});
+  const pv=$('#prev'),nx=$('#next'),ps=$('#psize');if(pv)pv.onclick=()=>{state.page--;search();};
+  if(nx)nx.onclick=()=>{state.page++;search();};if(ps)ps.onchange=e=>{state.size=+e.target.value;state.page=1;search();};}
+
+function updSel(){$('#selCount').textContent=state.sel.size;if(state.sel.size)$('#cmpSel').textContent=`并排对比选中 (${state.sel.size})`;}
+
+async function renderWalk(){
+  const r=state.walkList[state.walkIdx];if(!r){$('#v-walk').innerHTML='<p class="muted">无数据</p>';return;}
+  const d=await api('product',{reg:r.reg});const p=d.product;const n=d.nutrients;
+  const lim=await api('limits',{reg:r.reg});
+  let h=`<div class="nav"><button class="btn ghost" id="wprev" ${state.walkIdx<=0?'disabled':''}>‹ 上一个</button>`
+    +`<span class="pill">${state.walkIdx+1} / ${state.walkList.length}</span>`
+    +`<button class="btn ghost" id="wnext" ${state.walkIdx>=state.walkList.length-1?'disabled':''}>下一个 ›</button>`
+    +`<label class="chk"><input type="checkbox" id="wsel" ${state.sel.has(p.reg)?'checked':''}> 加入对比</label>`
+    +`<button class="btn ghost" id="wcmp">并排对比选中 (${state.sel.size})</button></div>`;
+  h+='<div class="detail"><h2>'+esc(p.brand)+' · '+esc(p.product_name)+'</h2>'
+    +'<div class="small">'+esc(p.reg)+' · <span class="st-'+esc(p.status)+'">'+esc(p.status)+'</span> · '+esc(p.food_name)+'</div>'
+    +'<div class="kv">'
+    +kv('原产国',p.country)+kv('生产企业',p.company)+kv('生产工艺',p.process)+kv('批准日期',p.approve_date)
+    +kv('有效期至',p.valid_until)+kv('法定代表人',p.legal_rep)+kv('生产地址',p.address)+kv('英文名',p.product_name_en)
+    +'</div>'
+    +'<div style="margin:6px 0">'+flagsHtml(p)+'</div>';
+  if(p.detail_fetched){
+    const BANDN={1:'Codex GSIF/ESPGHAN 2014',2:'ENA follow-up 2020+EU 2016/127',3:'ENA/泰国 YCF 共识'}[p.stage]||'Codex/ESPGHAN';
+    const STDN={1:'GB 10765-2021',2:'GB 10766-2021',3:'GB 10767-2021'}[p.stage]||'GB';
+    const dom=lim.rows.filter(x=>x.kind!=='intl'), intl=lim.rows.filter(x=>x.kind==='intl');
+    const rd=v=>v==null?'—':(v>=100?Math.round(v):Math.round(v*100)/100);
+    const vc={'高于参考上限':'var(--bad)','高于法定上限':'var(--bad)','接近上限':'var(--warn)','低于参考下限':'var(--warn)','低于法定下限':'var(--warn)','区间内':'var(--good)','未列示':'var(--dim)'};
+    const tally=rs=>{const c={};for(const x of rs)c[x.verdict]=(c[x.verdict]||0)+1;return Object.entries(c).map(([k,v])=>`<span style="color:${vc[k]||'var(--dim)'}">${k} ${v}</span>`).join(' · ');};
+    const rowsHtml=rs=>rs.map(x=>`<tr><td>${esc(x.nutrient)}</td><td class="small">${esc(x.basis)}</td><td class="right">${x.value!=null?x.value+' '+x.value_unit:'—'}</td><td class="right small">[${rd(x.min_v)}, ${rd(x.max_v)}] ${x.unit}</td><td style="color:${vc[x.verdict]||'var(--dim)'}">${x.verdict}</td><td class="muted small">${esc(x.source)}</td></tr>`).join('');
+    const th='<thead><tr><th>成分</th><th>依据</th><th class="right">产品值</th><th class="right">区间(每100kJ)</th><th>判定</th><th class="muted">来源</th></tr></thead>';
+    h+='<details open style="margin:8px 0;border-color:#2e5d3e"><summary style="cursor:pointer;font-weight:600">✅ 国内法定判定（首要依据 · '+STDN+' · '+tally(dom)+'）</summary>'
+     +'<div class="scroll" style="max-height:42vh;margin-top:6px"><table>'+th+'<tbody>'+rowsHtml(dom)+'</tbody></table></div>'
+     +'<p class="small">注：GB 为中国市场<b>法定准入依据</b>，区间直接取自国标原表『每100kJ』列（原 PDF 留档 docs/references/）。注册审评即按此表，故绝大多数产品应显示区间内；"接近上限"仅是提示，不是问题。部分成分（如核苷酸、HMO、OPO 等）国标未设限，不在此表。</p></details>';
+    h+='<details style="margin:8px 0"><summary style="cursor:pointer;font-weight:600;color:var(--dim)">🌐 国际参考带判定（次要参考 · '+p.stage+'段 · '+BANDN+' · '+tally(intl)+'）</summary>'
+     +'<div class="scroll" style="max-height:42vh;margin-top:6px"><table>'+th+'<tbody>'+rowsHtml(intl)+'</tbody></table></div>'
+     +'<p class="small">注：国际带（ESPGHAN/Codex/ENA/EU/YCF，由每100kcal÷4.184换算）为专家共识或外域法规，严于 GB 处很常见——如 <b>维生素D 国际带上限 0.6 µg/100kJ，而 GB 法定上限 1.2</b>，故"高于参考上限"≠违规≠有风险，选购请以国内法定判定为主、此处仅作横向参考。</p></details>';}
+  if(p.remark)h+='<p class="small">备注：'+esc(p.remark)+'</p>';
+  if(n.length){h+='<div class="scroll" style="max-height:46vh;margin-top:8px"><table><thead><tr><th>#</th><th>成分项目</th><th>单位</th><th class="right">每100kJ</th><th class="right">每100g/mL</th></tr></thead><tbody>';
+    for(const x of n)h+=`<tr><td class="muted">${x.seq}</td><td>${esc(x.name)}</td><td>${esc(x.unit)}</td><td class="right">${esc(x.per_100kj)}</td><td class="right">${esc(x.per_100g)}</td></tr>`;
+    h+='</tbody></table></div>';}
+  else h+='<p class="small">该注册号成分明细尚未抓取（后台下载中），基本信息可用。</p>';
+  if(p.change_log)h+='<details style="margin-top:10px"><summary class="small">配方变更历史</summary><p class="small">'+esc(p.change_log)+'</p></details>';
+  h+='</div>';
+  $('#v-walk').innerHTML=h;
+  $('#wprev').onclick=()=>{if(state.walkIdx>0){state.walkIdx--;renderWalk();}};
+  $('#wnext').onclick=()=>{if(state.walkIdx<state.walkList.length-1){state.walkIdx++;renderWalk();}};
+  $('#wsel').onchange=e=>{e.target.checked?state.sel.add(p.reg):state.sel.delete(p.reg);updSel();};
+  $('#wcmp').onclick=compareSel;}
+function kv(k,v){return `<div><span>${k}</span>${esc(v)||'—'}</div>`;}
+
+async function compareSel(){if(!state.sel.size)return alert('请先勾选要对比的产品');
+  const regs=[...state.sel];setView('cmp');
+  const [d,lims]=await Promise.all([api('compare',{regs:regs.join(',')}),Promise.all(regs.map(r=>api('limits',{reg:r})))]);
+  renderCmp(d,lims);}
+
+function renderCmp(d,lims){
+  const P=d.products,O=d.nutrient_order,C=d.cells;
+  let h=`<div class="legend">并排对比 ${P.length} 款 · 红色底=该成分各产品数值存在差异 · 空白(—)=该产品注册标签未列示此项</div>`;
+  h+='<div class="scroll"><table class="cmp"><thead><tr><th class="name">产品 / 成分</th>';
+  for(const p of P)h+=`<th class="hd"><span class="rm" data-reg="${esc(p.reg)}">✕</span>${esc(p.brand)}<div class="sub">${esc(p.product_name).slice(0,20)}</div><div class="sub">${esc(p.reg)}</div></th>`;
+  h+='</tr>';
+  const meta=(label,f)=>{const vs=P.map(f);const diff=new Set(vs).size>1;
+    return `<tr class="grp"><td class="name">${label}</td>`+vs.map(v=>`<td class="cell ${diff?'diff':''}">${esc(v)||'—'}</td>`).join('')+'</tr>';};
+  h+=meta('原产国',p=>p.country)+meta('工艺',p=>p.process)+meta('状态',p=>p.status)+meta('有效期至',p=>p.valid_until)+meta('奶基',p=>p.is_goat?'羊奶基':'牛奶基')+meta('企业',p=>p.company);
+  h+='</tbody><tbody>';
+  const cmpBlock=(label,wantDom)=>{
+    h+=`<tr class="grp"><td class="name" colspan="${P.length+1}">${label}</td></tr>`;
+    if(!lims||!lims[0])return;
+    const pick=L=>L.rows.filter(x=>wantDom?x.kind!=='intl':x.kind==='intl');
+    const names=pick(lims[0]).map(x=>x.nutrient+' · '+x.basis);
+    for(let i=0;i<names.length;i++){
+      h+=`<tr><td class="name">${esc(names[i])}</td>`;
+      for(const L of lims){const x=pick(L)[i];if(!x){h+='<td class="cell miss">—</td>';continue;}
+        const col={'高于参考上限':'#ff8a97','高于法定上限':'#ff8a97','接近上限':'#ffcf6b','低于参考下限':'#ffcf6b','低于法定下限':'#ffcf6b','区间内':'#8ff0b0','未列示':'#4a5470'}[x.verdict];
+        h+=`<td class="cell right" style="color:${col}">${x.verdict}${x.value!=null?'<div class="muted small">'+x.value+' '+x.value_unit+'</div>':''}</td>`;}
+      h+='</tr>';}};
+  cmpBlock('国内 GB 法定判定（首要依据，按段取 GB 10765/10766/10767-2021，每100kJ；红=超法定上限 黄=接近/低于 绿=区间内）',true);
+  cmpBlock('国际参考带判定（次要参考，ESPGHAN/Codex/ENA/EU/YCF；严于 GB 属正常，不代表违规）',false);
+  h+=`<tr class="grp"><td class="name" colspan="${P.length+1}">营养成分对比（每100g / 括号内为每100kJ）</td></tr>`;
+  for(const name of O){
+    let vals=P.map(p=>C[p.reg+'|'+name]);let set=new Set(vals.map(v=>v?v.g:''));let diff=set.size>1;
+    h+=`<tr><td class="name">${esc(name)}${vals.find(v=>v&&v.unit)?.unit?' <span class="muted small">'+esc(vals.find(v=>v&&v.unit).unit)+'</span>':''}</td>`;
+    for(const v of vals){if(!v)h+='<td class="cell miss">—</td>';else h+=`<td class="cell ${diff?'diff':''} right">${esc(v.g)} <span class="muted small">(${esc(v.kj)})</span></td>`;}
+    h+='</tr>';}
+  h+='</tbody></table></div><button class="btn" onclick="window.print()">打印/导出PDF</button>';
+  $('#v-cmp').innerHTML=h;
+  document.querySelectorAll('#v-cmp .rm').forEach(x=>x.onclick=e=>{state.sel.delete(e.target.dataset.reg);updSel();compareSel();});}
+
+function setView(v){state.view=v;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+  for(const x of['list','walk','cmp','rec','src'])$('#v-'+x).style.display=(x===v?'':'none');}
+
+// —— 成分亮点筛选条 ——
+function initFlagBar(){const bar=$('#flagBar');
+  const tierOf=f=>(FDEF[f]||{}).tier||'中';
+  const mk=f=>{const l=document.createElement('label');l.className='chk';
+    l.innerHTML=`<input type="checkbox" data-flag="${esc(f)}"> ${esc(f)}`;bar.appendChild(l);};
+  for(const t of TIERS){const fs=FLAGS.filter(f=>tierOf(f)===t);
+    if(!fs.length)continue;
+    const h=document.createElement('span');h.className='tierLab';h.style.color=TIER_COLOR[t];h.textContent=t;bar.appendChild(h);
+    fs.forEach(mk);}
+  bar.querySelectorAll('input').forEach(cb=>cb.onchange=e=>{const f=e.target.dataset.flag;
+    e.target.checked?state.flags.add(f):state.flags.delete(f);
+    if(state.view==='rec')renderRecommend();else{state.page=1;search();}});}
+
+// —— 推荐发现视图 ——
+async function renderRecommend(){
+  const q={flag:[...state.flags].join(','),goat:$('#fMilk').value==='goat'?'1':'',cow:$('#fMilk').value==='cow'?'1':''};
+  const d=await api('recommend',q);const rows=d.rows;
+  let h=`<div class="legend"><b>“推荐”口径（可复现，非人为挑选）</b>：1段 且 注册状态有效 且 未过期 且 原 Excel 表格未收录 且 命中主流品牌白名单。当前命中 <b>${rows.length}</b> 款。勾选后可并排对比。成分亮点见末列（—=成分明细未抓取）。</div>`;
+  h+='<div class="scroll"><table class="rowlist"><thead><tr><th></th><th>品牌</th><th>产品名称</th><th>注册号</th><th>原产国</th><th>工艺</th><th>有效期至</th><th>成分亮点</th><th></th></tr></thead><tbody>';
+  for(const r of rows){const ck=state.sel.has(r.reg)?'checked':'';
+    h+=`<tr><td><input type="checkbox" class="selck" data-reg="${esc(r.reg)}" ${ck}></td>`
+     +`<td>${esc(r.brand)}</td><td>${esc(r.product_name)}</td><td class="muted">${esc(r.reg)}</td>`
+     +`<td>${esc(r.country)}${r.is_goat?' <span class="tag t-go">羊</span>':''}</td><td>${esc(r.process)}</td><td>${esc(r.valid_until)}</td>`
+     +`<td>${flagsHtml(r)||'<span class=muted>—</span>'}</td>`
+     +`<td><button class="btn ghost view" data-reg="${esc(r.reg)}">详情</button></td></tr>`;}
+  h+='</tbody></table></div>';$('#v-rec').innerHTML=h;bindRec(rows);}
+function bindRec(rows){
+  document.querySelectorAll('#v-rec .selck').forEach(c=>c.onchange=e=>{const r=e.target.dataset.reg;e.target.checked?state.sel.add(r):state.sel.delete(r);updSel();});
+  document.querySelectorAll('#v-rec .view').forEach(b=>b.onclick=e=>{const r=e.target.dataset.reg;state.walkList=rows;state.walkIdx=rows.findIndex(x=>x.reg===r);setView('walk');renderWalk();});}
+
+// —— 数据来源说明视图 ——
+async function renderSource(){
+  const m=await api('meta',{});const s=await api('stats',{});
+  const row=(k,v)=>`<div class="sr"><div class="sk">${esc(k)}</div><div class="sv">${v}</div></div>`;
+  let h=`<div class="detail"><h2>这份数据是怎么来的？</h2>`
+   +`<p class="small">${esc(m.source)}<br>入口：${m.source_url?`<a href="${esc(m.source_url)}" target="_blank">${esc(m.source_url)}</a>`:''} · 核实/快照日期：<b>${esc(m.as_of)}</b></p>`
+   +row('① 列表接口',esc(m.api_list))+row('② 详情接口',esc(m.api_detail))+row('③ 采集管线',esc(m.pipeline))
+   +row('『表格已收录』含义',esc(m.table_basis))+row('『推荐』口径',esc(m.recommend_basis))+row('成分明细覆盖',esc(m.nutrient_note))
+   +`<div class="sr"><div class="sk">当前库存</div><div class="sv">产品 <b>${s.total}</b> 条；已抓详情(含成分) <b>${s.fetched}</b> 条（后台持续增量下载，重跑 build_db.py 补全）；营养成分 <b>${s.nutrients}</b> 行；主流品牌 <b>${s.mainstream}</b>；已过期 <b>${s.expired}</b>。</div></div>`
+   +`<div class="sr"><div class="sk">成分亮点判定</div><div class="sv">依据官方注册标签『营养成分表』列示的项目名称判定；活菌/骨桥蛋白/磷脂等仅见于配料表的成分，改由『配方变更历史』文本识别；MFGM/神经节苷脂在中国注册标签中通常不列示，恒为 0 属正常。筛选条按证据四级分层：必须(基础必需)/强(系统综述或荟萃支持)/中(RCT方向一致但数量少)/弱(机制或间接证据为主)，中偏强归中、弱-中归弱；赛道分类与证据明细见《婴配粉核心成分功效证据分级调研结论.md》。可筛项：${FLAGS.map(esc).join('、')}。</div></div>`
+   +`<div class="sr"><div class="sk">参考带判定</div><div class="sv"><b>首要依据：国内 GB 法定带</b>——GB 10765-2021(1段)/GB 10766-2021(2段较大婴儿)/GB 10767-2021(3段幼儿)，区间直接取自国标原表『每100kJ』列；三部标准 PDF 原件已留档 docs/references/（闽清县政府网转载·来源国家食品安全风险评估中心）。次要参考：国际带——ESPGHAN 2014/Codex GSIF(CXS 72-1981)/ENA 2020 follow-up(YCF 为 ENA/泰国共识)/EU (EU)2016/127(每100kcal÷4.184=每100kJ)，数值出处 PMC8620542 Table1/3/4 全表与 PMC10180831 Table5，EU 原文亦留档 docs/references/。Codex 原 PDF 在 workspace.fao.org(需 FAO 账号)无法直抓，采用同行评审转载值。国际带严于/异于 GB 属正常（如维生素D：GB 法定 0.48–1.20 µg/100kJ，ESPGHAN 参考仅 0.24–0.60），故『高于参考上限』不代表违反 GB，选购判断以国内法定判定为主。注：修正过早期版本铁行 mg/µg 换算与 1段胆碱误用 2段 GUL 的问题。</div></div>`
+   +`<p class="small" style="margin-top:14px">合规提示：本工具仅汇总监管公开注册信息，用于配方对比与研究；不构成选购建议，产品实际以罐身现行标签为准。</p>`
+   +`</div>`;
+  $('#v-src').innerHTML=h;}
+
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{const v=b.dataset.v;setView(v);
+  if(v==='list')renderList();
+  else if(v==='walk'){state.walkList=state.rows;state.walkIdx=0;renderWalk();}
+  else if(v==='rec')renderRecommend();
+  else if(v==='src')renderSource();});
+$('#doSearch').onclick=()=>{state.page=1;if(state.view==='rec')renderRecommend();else search();};
+$('#doReset').onclick=()=>{$('#fStage').value='1';$('#fStatus').value='有效';$('#fMilk').value='';$('#fQ').value='';
+  $('#fTab').checked=false;$('#fNotTab').checked=false;$('#fMain').checked=false;$('#fValid').checked=true;$('#fFet').checked=true;
+  state.flags.clear();document.querySelectorAll('#flagBar input').forEach(c=>c.checked=false);state.page=1;search();};
+$('#fQ').onkeydown=e=>{if(e.key==='Enter'){state.page=1;search();}};
+$('#cmpSel').onclick=compareSel;
+// preload
+(async()=>{
+  try{const defs=await api('flagdefs',{});FDEF={};for(const d of defs)FDEF[d.name]=d;}catch(e){}
+  initFlagBar();
+  await loadStats();await search();updSel();})();
+</script>
+</body>
+</html>

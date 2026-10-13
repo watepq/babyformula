@@ -1,0 +1,512 @@
+ANNEX II
+COMPOSITIONAL REQUIREMENTS REFERRED TO IN ARTICLE 2(2)
+1.   ENERGY
+Minimum
+ 
+Maximum
+250 kJ/100 ml
+ 
+293 kJ/100 ml
+(60 kcal/100 ml)
+ 
+(70 kcal/100 ml)
+2.   PROTEINS
+(Protein content = nitrogen content × 6,25)
+2.1.   Follow-on formula manufactured from cows' milk or goats' milk proteins
+Minimum
+ 
+Maximum
+0,43 g/100 kJ
+ 
+0,6 g/100 kJ
+(1,8 g/100 kcal)
+ 
+(2,5 g/100 kcal)
+For an equal energy value, follow-on formula manufactured from cows' milk or goats' milk proteins must contain an available quantity of each indispensable and conditionally indispensable amino acid at least equal to that contained in the reference protein as set out in Section A of Annex III. Nevertheless, for calculation purposes, the concentration of methionine and cysteine and the concentration of phenylalanine and tyrosine may be added together.
+2.2.   Follow-on formula manufactured from soya protein isolates, alone or in a mixture with cows' milk or goats' milk proteins
+Minimum
+ 
+Maximum
+0,54 g/100 kJ
+ 
+0,67 g/100 kJ
+(2,25 g/100 kcal)
+ 
+(2,8 g/100 kcal)
+Only protein isolates from soya shall be used in manufacturing this follow-on formula.
+For an equal energy value, follow-on formula manufactured from soya protein isolates, alone or in a mixture with cows' milk or goats' milk proteins, must contain an available quantity of each indispensable and conditionally indispensable amino acid at least equal to that contained in the reference protein as set out in Section A of Annex III. Nevertheless, for calculation purposes, the concentration of methionine and cysteine and the concentration of phenylalanine and tyrosine may be added together.
+2.3.   Follow-on formula manufactured from protein hydrolysates
+Minimum
+ 
+Maximum
+0,44 g/100 kJ
+ 
+0,67 g/100 kJ
+(1,86 g/100 kcal)
+ 
+(2,8 g/100 kcal)
+2.3.1.   Protein source
+Demineralised sweet whey protein derived from cows' milk after enzymatic precipitation of caseins using chymosin, consisting of:
+(a)
+ 
+63 % caseino-glycomacropeptide free whey protein isolate with a minimum protein content of 95 % of dry matter and protein denaturation of less than 70 % and a maximum ash content of 3 %; and
+(b)
+ 
+37 % sweet whey protein concentrate with a minimum protein content of 87 % of dry matter and protein denaturation of less than 70 % and a maximum ash content of 3,5 %.
+2.3.2.   Protein processing
+Two-stage hydrolysis process using a trypsin preparation with a heat-treatment step (from 3 to 10 minutes at 80 to 100 °C) between the two hydrolysis steps.
+2.3.3.   Indispensable and conditionally indispensable amino acids
+For an equal energy value, follow-on formula manufactured from protein hydrolysates must contain an available quantity of each indispensable and conditionally indispensable amino acid at least equal to that contained in the reference protein as set out in Section B of Annex III. Nevertheless, for calculation purposes, the concentration of methionine and cysteine and the concentration of phenylalanine and tyrosine may be added together.
+2.4.   In all cases, amino acids may be added to follow-on formula solely for the purpose of improving the nutritional value of the proteins, and only in the proportions necessary for that purpose.
+3.   TAURINE
+If added to follow-on formula, the amount of taurine shall not be greater than 2,9 mg/100 kJ (12 mg/100 kcal).
+4.   LIPIDS
+Minimum
+ 
+Maximum
+1,1 g/100 kJ
+ 
+1,4 g/100 kJ
+(4,4 g/100 kcal)
+ 
+(6,0 g/100 kcal)
+4.1.   The use of the following substances shall be prohibited:
+—
+ 
+sesame seed oil,
+—
+ 
+cotton seed oil.
+4.2.   The trans fatty acid content shall not exceed 3 % of the total fat content.
+4.3.   The erucic acid content shall not exceed 1 % of the total fat content.
+4.4.   Linoleic acid
+Minimum
+ 
+Maximum
+120 mg/100 kJ
+ 
+300 mg/100 kJ
+(500 mg/100 kcal)
+ 
+(1 200 mg/100 kcal)
+4.5.   Alpha-linolenic acid
+Minimum
+ 
+Maximum
+12 mg/100 kJ
+ 
+24 mg/100 kJ
+(50 mg/100 kcal)
+ 
+(100 mg/100 kcal)
+4.6.   Docosahexaenoic acid
+Minimum
+ 
+Maximum
+4,8 mg/100 kJ
+ 
+12 mg/100 kJ
+(20 mg/100 kcal)
+ 
+(50 mg/100 kcal)
+4.7.   Other long-chain (20 and 22 carbon atoms) polyunsaturated fatty acids may be added. In that case the content of long-chain polyunsaturated fatty acids shall not exceed 2 % of the total fat content for n-6 long-chain polyunsaturated fatty acids (1 % of the total fat content for arachidonic acid (20:4 n-6).
+The eicosapentaenoic acid (20:5 n-3) content shall not exceed that of docosahexaenoic (22:6 n-3) acid content.
+5.   PHOSPHOLIPIDS
+The amount of phospholipids in follow-on formula shall not be greater than 2 g/l.
+6.   CARBOHYDRATES
+Minimum
+ 
+Maximum
+2,2 g/100 kJ
+ 
+3,3 g/100 kJ
+(9 g/100 kcal)
+ 
+(14 g/100 kcal)
+6.1.   The use of ingredients containing gluten shall be prohibited.
+6.2.   Lactose
+Minimum
+ 
+Maximum
+1,1 g/100 kJ
+ 
+—
+(4,5 g/100 kcal)
+ 
+—
+Those minimum levels shall not apply to follow-on formula:
+—
+ 
+in which soya protein isolates represent more than 50 % of the total protein content, or
+—
+ 
+bearing the statement ‘lactose free’ in accordance with Article 9(2).
+6.3.   Sucrose, fructose, honey
+Minimum
+ 
+Maximum
+—
+ 
+separately or as a whole: 20 % of the total carbohydrate content
+Honey shall be treated to destroy spores of Clostridium botulinum.
+6.4.   Glucose
+Glucose may only be added to follow-on formula manufactured from protein hydrolysates. If added, the glucose content shall not exceed 0,5 g/100 kJ (2 g/100 kcal).
+6.5.   Glucose syrup or dried glucose syrup
+Glucose syrup or dried glucose syrup may be added to follow-on formula manufactured from cows' milk or goats' milk proteins or follow-on formula manufactured from soya protein isolates (alone or in a mixture with cows' milk or goats' milk proteins) only if its dextrose equivalent does not exceed 32. If glucose syrup or dried glucose syrup is added to these products, the glucose content resulting from glucose syrup or dried glucose syrup shall not exceed 0,2 g/100 kJ (0,84 g/100 kcal).
+The maximum glucose amounts laid down in point 6.4 shall apply if glucose syrup or dried glucose syrup is added to follow-on formula manufactured from protein hydrolysates.
+7.   FRUCTO-OLIGOSACCHARIDES AND GALACTO-OLIGOSACCHARIDES
+Fructo-oligosaccharides and galacto-oligosaccharides may be added to follow-on formula. In that case their content shall not exceed: 0,8 g/100 ml in a combination of 90 % oligogalactosyl-lactose and 10 % high molecular weight oligofructosyl-saccharose.
+Other combinations and maximum levels of fructo-oligosaccharides and galacto-oligosaccharides may be used, provided that their suitability for infants is demonstrated in accordance with Article 3(3).
+8.   MINERAL SUBSTANCES
+8.1.   Follow-on formula manufactured from cows' milk or goats' milk proteins or protein hydrolysates
+ 
+ 
+Per 100 kJ
+ 
+Per 100 kcal
+Minimum
+ 
+Maximum
+ 
+Minimum
+ 
+Maximum
+Sodium (mg)
+ 
+6
+ 
+14,3
+ 
+25
+ 
+60
+Potassium (mg)
+ 
+19,1
+ 
+38,2
+ 
+80
+ 
+160
+Chloride (mg)
+ 
+14,3
+ 
+38,2
+ 
+60
+ 
+160
+Calcium (mg)
+ 
+12
+ 
+33,5
+ 
+50
+ 
+140
+Phosphorus (mg) (1)
+ 
+6
+ 
+21,5
+ 
+25
+ 
+90
+Magnesium (mg)
+ 
+1,2
+ 
+3,6
+ 
+5
+ 
+15
+Iron (mg)
+ 
+0,14
+ 
+0,48
+ 
+0,6
+ 
+2
+Zinc (mg)
+ 
+0,12
+ 
+0,24
+ 
+0,5
+ 
+1
+Copper (μg)
+ 
+14,3
+ 
+24
+ 
+60
+ 
+100
+Iodine (μg)
+ 
+3,6
+ 
+6,9
+ 
+15
+ 
+29
+Selenium (μg)
+ 
+0,72
+ 
+2
+ 
+3
+ 
+8,6
+Manganese (μg)
+ 
+0,24
+ 
+24
+ 
+1
+ 
+100
+Molybdenum (μg)
+ 
+—
+ 
+3,3
+ 
+—
+ 
+14
+Fluoride (μg)
+ 
+—
+ 
+24
+ 
+—
+ 
+100
+The calcium:available phosphorus molar ratio shall not be less than 1 nor greater than 2. The amount of available phosphorus shall be calculated as 80 % of total phosphorus for follow-on formula manufactured from cow's milk protein, goats' milk protein or protein hydrolysates.
+8.2.   Follow-on formula manufactured from soya protein isolates, alone or in a mixture with cows' milk or goats' milk proteins
+All requirements of point 8.1 shall apply, except for those concerning iron, phosphorus and zinc, which shall be as follows:
+ 
+ 
+Per 100 kJ
+ 
+Per 100 kcal
+Minimum
+ 
+Maximum
+ 
+Minimum
+ 
+Maximum
+Iron (mg)
+ 
+0,22
+ 
+0,6
+ 
+0,9
+ 
+2,5
+Phosphorus (mg) (2)
+ 
+7,2
+ 
+24
+ 
+30
+ 
+100
+Zinc (mg)
+ 
+0,18
+ 
+0,3
+ 
+0,75
+ 
+1,25
+The calcium:available phosphorus molar ratio shall not be less than 1 nor greater than 2. The amount of available phosphorus shall be calculated as 70 % of total phosphorus for follow-on formula manufactured from soya protein isolates.
+9.   VITAMINS
+ 
+ 
+Per 100 kJ
+ 
+Per 100 kcal
+Minimum
+ 
+Maximum
+ 
+Minimum
+ 
+Maximum
+Vitamin A (μg-RE) (3)
+ 
+16,7
+ 
+27,2
+ 
+70
+ 
+114
+Vitamin D (μg)
+ 
+0,48
+ 
+0,72
+ 
+2
+ 
+3
+Thiamine (μg)
+ 
+9,6
+ 
+72
+ 
+40
+ 
+300
+Riboflavin (μg)
+ 
+14,3
+ 
+95,6
+ 
+60
+ 
+400
+Niacin (mg) (4)
+ 
+0,1
+ 
+0,36
+ 
+0,4
+ 
+1,5
+Pantothenic acid (mg)
+ 
+0,1
+ 
+0,48
+ 
+0,4
+ 
+2
+Vitamin B6 (μg)
+ 
+4,8
+ 
+41,8
+ 
+20
+ 
+175
+Biotin (μg)
+ 
+0,24
+ 
+1,8
+ 
+1
+ 
+7,5
+Folate (μg-DFE) (5)
+ 
+3,6
+ 
+11,4
+ 
+15
+ 
+47,6
+Vitamin B12 (μg)
+ 
+0,02
+ 
+0,12
+ 
+0,1
+ 
+0,5
+Vitamin C (mg)
+ 
+0,96
+ 
+7,2
+ 
+4
+ 
+30
+Vitamin K (μg)
+ 
+0,24
+ 
+6
+ 
+1
+ 
+25
+Vitamin E (mg α-tocopherol) (6)
+ 
+0,14
+ 
+1,2
+ 
+0,6
+ 
+5
+10.   NUCLEOTIDES
+The following nucleotides may be added:
+ 
+ 
+Maximum (7)
+(mg/100 kJ)
+ 
+(mg/100 kcal)
+cytidine 5′-monophosphate
+ 
+0,60
+ 
+2,50
+uridine 5′-monophosphate
+ 
+0,42
+ 
+1,75
+adenosine 5′-monophosphate
+ 
+0,36
+ 
+1,50
+guanosine 5′-monophosphate
+ 
+0,12
+ 
+0,50
+inosine 5′-monophosphate
+ 
+0,24
+ 
+1,00
+(1)  Total phosphorus.
+(2)  Total phosphorus.
+(3)  Preformed vitamin A; RE = all trans retinol equivalent.
+(4)  Preformed niacin.
+(5)  Dietary folate equivalent: 1 μg DFE = 1 μg food folate = 0,6 μg folic acid from formula.
+(6)  Based on vitamin E activity of RRR-α-tocopherol.
+(7)  The total concentration of nucleotides shall not exceed 1,2 mg/100 kJ (5 mg/100 kcal).
